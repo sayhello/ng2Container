@@ -1,10 +1,21 @@
 <h1>
-  {{title}}
+	{{title}}
 </h1>
 
-<button
-      kendoButton
-      (click)="onButtonClick()"
-      [primary]="true">
+<button kendoButton (click)="onButtonClick()" [primary]="true">
       My Kendo UI Button
     </button>
+
+<kendo-grid [data]="gridData">
+	<kendo-grid-column field="ProductID" title="Product ID">
+	</kendo-grid-column>
+	<kendo-grid-column field="ProductName" title="Product Name">
+	</kendo-grid-column>
+	<kendo-grid-column field="UnitPrice" title="Unit Price">
+	</kendo-grid-column>
+	<kendo-grid-column field="Discontinued">
+		<template kendoCellTemplate let-dataItem>
+			<input type="checkbox" [checked]="dataItem.Discontinued" disabled/>
+		</template>
+	</kendo-grid-column>
+</kendo-grid>

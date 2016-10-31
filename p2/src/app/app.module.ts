@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { ButtonsModule } from '@progress/kendo-angular-buttons';
-
+import { GridModule } from '@progress/kendo-angular-grid';
 import { AppComponent } from './app.component';
 
 @NgModule({
@@ -14,7 +14,8 @@ import { AppComponent } from './app.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    ButtonsModule
+    ButtonsModule,
+    GridModule
   ],
   providers: [],
   bootstrap: [AppComponent]

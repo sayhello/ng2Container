@@ -16,7 +16,8 @@
       "mobile": false,
       "styles": [
         "styles.css",
-        "../node_modules/@progress/kendo-angular-buttons/dist/npm/css/main.css"
+        "../node_modules/@progress/kendo-angular-buttons/dist/npm/css/main.css",
+        "../node_modules/@progress/kendo-angular-grid/dist/npm/css/main.css"
       ],
       "scripts": [],
       "environments": {
