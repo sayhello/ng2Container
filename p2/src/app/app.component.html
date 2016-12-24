@@ -4,16 +4,18 @@
 <hr>
 <button kendoButton (click)="onButtonClick()" [primary]="true">My Kendo UI Button</button>
 <hr>
-<kendo-grid [data]="gridData">
-	<kendo-grid-column field="ProductID" title="Product ID">
-	</kendo-grid-column>
-	<kendo-grid-column field="ProductName" title="Product Name">
-	</kendo-grid-column>
-	<kendo-grid-column field="UnitPrice" title="Unit Price">
-	</kendo-grid-column>
-	<kendo-grid-column field="Discontinued">
-		<template kendoCellTemplate let-dataItem>
-			<input type="checkbox" [checked]="dataItem.Discontinued" disabled/>
-		</template>
-	</kendo-grid-column>
+<kendo-grid 
+  [data]="gridData"
+  [height]="250">
+	<kendo-grid-column field="code" title="Code"></kendo-grid-column>
+	<kendo-grid-column field="name" title="Name"></kendo-grid-column>
 </kendo-grid>
+<hr>
+ <kendo-chart>
+          <kendo-chart-series>
+            <kendo-chart-series-item
+                type="column" [data]="seriesData"
+                field="name" categoryField="code">
+            </kendo-chart-series-item>
+          </kendo-chart-series>
+        </kendo-chart>

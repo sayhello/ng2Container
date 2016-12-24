@@ -1,7 +1,7 @@
 {
   "project": {
     "version": "1.0.0-beta.17",
-    "name": "p2"
+    "name": "p4"
   },
   "apps": [
     {
@@ -15,10 +15,7 @@
       "prefix": "app",
       "mobile": false,
       "styles": [
-        "styles.css",
-        "../node_modules/@progress/kendo-angular-buttons/dist/npm/css/main.css",
-        "../node_modules/@progress/kendo-angular-grid/dist/npm/css/main.css",
-        "../node_modules/@progress/kendo-angular-charts/dist/npm/css/main.css"
+        "styles.css"
       ],
       "scripts": [],
       "environments": {

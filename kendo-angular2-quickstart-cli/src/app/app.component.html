@@ -1,0 +1,63 @@
+<h1>{{title}}</h1>
+<button kendoButton (click)="onButtonClick()" [primary]="true">
+ My Kendo UI Button
+</button>
+<hr>
+<div>
+
+  <form novalidate #f="ngForm">
+    {{ f.value | json }}
+    <div>
+      <label><span>Full name</span>
+    <input
+      type="text"
+      name="name"
+      placeholder="Your full name"
+      [(ngModel)]="user.name">
+  </label>
+    </div>
+    <div ngModelGroup="account">
+      <div>
+        <label>
+      <span>Email address</span>
+      <input
+        type="email"
+        name="email"
+        placeholder="Your email address">
+    </label>
+      </div>
+      <div>
+        <label>
+      <span>Confirm address</span>
+      <input
+        type="email"
+        name="confirm"
+        placeholder="Confirm your email address">
+    </label>
+      </div>
+    </div>
+
+
+
+
+    <button type="submit">Sign up</button>
+  </form>
+</div>
+
+<hr>
+
+
+<ul>
+    <li *ngFor="let item of items | async">
+      <input type="text" #updatetext [value]="item.first_name" />
+      <button (click)="updateItem(item.$key, updatetext.value)">Update</button>
+      <button (click)="deleteItem(item.$key)">Delete</button>
+    </li>
+  </ul>
+  <input type="text" #newitem />
+  <button (click)="addItem(newitem.value)">Add</button>
+  <button (click)="deleteEverything()">Delete All</button>
+
+
+
+

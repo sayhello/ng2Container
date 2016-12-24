@@ -1,5 +1,5 @@
 {
-  "name": "p2",
+  "name": "p4",
   "version": "0.0.0",
   "license": "MIT",
   "angular-cli": {},
@@ -20,11 +20,6 @@
     "@angular/platform-browser": "~2.0.0",
     "@angular/platform-browser-dynamic": "~2.0.0",
     "@angular/router": "~3.0.0",
-    "@progress/kendo-angular-buttons": "^0.13.1",
-    "@progress/kendo-angular-charts": "^0.7.5",
-    "@progress/kendo-angular-grid": "^0.5.0",
-    "@telerik/kendo-theme-bootstrap": "^0.8.1",
-    "@telerik/kendo-theme-default": "^1.28.1",
     "core-js": "^2.4.1",
     "rxjs": "5.0.0-beta.12",
     "ts-helpers": "^1.1.1",
